@@ -1,0 +1,27 @@
+{
+  "name": "Integrales-Definidas",
+  "version": "1.0.0",
+  "description": "Web app para la consulta de integrales definidas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonatanSCS/Integrales-Definidas.git"
+  },
+  "author": "Jonatan Santa Cruz Soria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonatanSCS/Integrales-Definidas/issues"
+  },
+  "homepage": "https://github.com/JonatanSCS/Integrales-Definidas",
+    "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-stylus": "^0.22.0",
+    "grunt-contrib-uglify": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
