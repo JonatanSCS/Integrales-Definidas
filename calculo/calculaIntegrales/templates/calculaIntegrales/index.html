@@ -1,0 +1,9 @@
+{% if funciones_lista %}
+	<ul>
+		{% for funcion in funciones_lista %}
+			<li><a href="/calculaIntegrales/{{ funcion.id}}">{{funcion.funcion_nombre}}</a></li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<p>Sin más funciones</p>
+{% endif%}
