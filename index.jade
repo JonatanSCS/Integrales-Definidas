@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		meta(name="viewport", content="width=device-width, user-scalable=no")
+		title Integrales por trapecios
+		link(rel="stylesheet", href="css/bootstrap.css")
+		link(rel="stylesheet", href="css/style.css")
+		link(rel="stylesheet", href="css/particles.css")
+		link(rel="stylesheet", href="css/animate.css")
+	body
+		div(id="particles-js")
+		div(class="welcome-div content-fluid")
+			div(class="row bienvenida")
+				h1 Bienvenidos
+				h2 Calculadora de Integrales definidas
+				button
+					a(href="") Comenzar
+			div(class="row datos")
+				h3 Santa Cruz Soria Jonatan 1CM5
+		
+
+script(src='scripts/jquery.js')
+script(src='scripts/particles.js')
+script(src='scripts/bootstrap.js')
+
+script.
+	particlesJS.load('particles-js', 'particles.json', function() {
+		console.log('callback - particles.js config loaded');
+	});1

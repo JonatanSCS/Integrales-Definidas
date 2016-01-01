@@ -9,8 +9,8 @@ module.exports = function(grunt) {
         banner: 'Grunt file/\n'
       },
       build: {
-        //src: 'scripts/jquery.cookie.js',
-        //dest: 'scripts/jquery.cookie.min.js'
+        src: ['scripts/jquery.js'],
+        dest: 'scripts/script.js'
       }
     },
     
