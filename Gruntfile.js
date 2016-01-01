@@ -23,6 +23,7 @@ module.exports = function(grunt) {
         },
         files: {
           'index.html': 'index.jade',
+          'html/historia.html': 'html/historia.jade'
         }
       } 
     },
@@ -53,6 +54,7 @@ module.exports = function(grunt) {
             stylesheets: {
                 files: ['css/style.styl',
                         'index.jade',
+                        'html/historia.jade'
                         ],
 
 
