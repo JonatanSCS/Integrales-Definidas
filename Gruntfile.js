@@ -24,7 +24,8 @@ module.exports = function(grunt) {
         files: {
           'index.html': 'index.jade',
           'html/historia.html': 'html/historia.jade',
-          'html/formulario.html': 'html/formulario.jade'
+          'html/formulario.html': 'html/formulario.jade',
+          'html/resultado.html': 'html/resultado.jade'
         }
       } 
     },
@@ -56,7 +57,8 @@ module.exports = function(grunt) {
                 files: ['css/style.styl',
                         'index.jade',
                         'html/historia.jade',
-                        'html/formulario.jade'
+                        'html/formulario.jade',
+                        'html/resultado.jade'
                         ],
 
 

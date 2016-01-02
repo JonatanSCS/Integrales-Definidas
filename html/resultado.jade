@@ -1,0 +1,55 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no")
+		title Integrales por trapecios
+		link(rel="stylesheet", href="../css/bootstrap.css")
+		link(rel="stylesheet", href="../css/style.css")
+		link(rel="stylesheet", href="../css/particles.css")
+		link(rel="stylesheet", href="../css/animate.css")
+
+		link(rel='icon', type='image/png', href='../img/integral.png')
+	body
+		div(id="particles-js")
+		div(class="resultado-div content-fluid")
+			div(class="row imagen-integral")
+				img(src="../img/integral.png", alt="")
+				label(class="label-b") b
+				label(class="label-a") a
+				label(class="label-funcion") f(x)
+				label(class="label-dx") dx
+
+			
+			div(class="row formula")
+				span(class="col-sm-3") Con la formula:
+				img(src="../img/formula.png", alt="", class="col-xs-12 col-sm-6")
+			
+			div(class="row igualdades")
+				span(class="col-sm-offset-3 col-sm-1") Donde: 
+				span(class="col-sm-1") h = b-a/n
+				ul(class="col-sm-offset-2 col-sm-2")
+					li
+						span a =
+					li
+						span b =
+					li
+						span n =
+			div(class="row resultado")
+				span h/2 (resultado)
+			div(class="row resultado-final")
+				span Resultado Final:
+
+
+style.
+	#particles-js{ background-color: white;}
+
+script(src='../scripts/jquery.js')
+script(src='../scripts/script.js')
+script(src='../scripts/particles.js')
+script(src='../scripts/bootstrap.js')
+
+script.
+	particlesJS.load('particles-js', '../particles2.json', function() {
+		console.log('callback - particles.js config loaded');
+	});1
