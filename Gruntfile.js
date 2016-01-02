@@ -9,8 +9,8 @@ module.exports = function(grunt) {
         banner: 'Grunt file/\n'
       },
       build: {
-        src: ['scripts/jquery.js'],
-        dest: 'scripts/script.js'
+        //src: ['scripts/jquery.js'],
+        //dest: 'scripts/script.js'
       }
     },
     
@@ -23,7 +23,8 @@ module.exports = function(grunt) {
         },
         files: {
           'index.html': 'index.jade',
-          'html/historia.html': 'html/historia.jade'
+          'html/historia.html': 'html/historia.jade',
+          'html/formulario.html': 'html/formulario.jade'
         }
       } 
     },
@@ -54,7 +55,8 @@ module.exports = function(grunt) {
             stylesheets: {
                 files: ['css/style.styl',
                         'index.jade',
-                        'html/historia.jade'
+                        'html/historia.jade',
+                        'html/formulario.jade'
                         ],
 
 

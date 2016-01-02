@@ -32,6 +32,8 @@ body
 			margin-top 50px
 			border-radius 5px
 			border none
+			margin-right 10px
+			padding 5px
 			a:hover
 				text-decoration none	
 	.datos
@@ -54,6 +56,7 @@ body
 		.newton , .leibniz
 			text-align center
 			img
+				margin-top 10px
 				height 237px
 				width 190px
 	
@@ -61,7 +64,9 @@ body
 		.carousel-inner
 			.item
 				text-align center
+
 				img
+					
 					height 200px
 					display inline
 	.historia-contenido
@@ -71,18 +76,102 @@ body
 			color #feab3a
 			font-weight 100
 		p
-			padding 30px
+			padding 7px 35px
 			text-align justify
+.formulario-div
+	background transparent
+	position absolute
+	width 100%
+	top 0
+	left 0
+	flex-wrap wrap
+	align-content center
+	flex-direction column
+	.imagen-integral
+		padding-top 15px
+		padding-left 20px
+		img
+			width 100px
+		label
+			position absolute
+			font-size 22px
+			color black
+			font-weight 300
+		.label-b
+			top 175px
+			left 40px
+		.label-a
+			left 110px
+		.label-funcion
+			top 100px
+			font-size 40px
+		.label-dx
+			font-size 40px
+			top 100px
+			left 250px
 	
+		
+	.opciones-funcion
+		margin-top 20px
+		text-align center
+		
+		h2
+			color #f35626
+			font-weight 100
+		.opcion-funcion
+			margin-top 10px
+			
+			button
+				border-radius 5px
+				border none
+				background white
+				width 100px
+				padding 5px
+			button:hover
+				text-decoration underline
+				color #f35626
+		
+	.intervalos
+		text-align center
+		margin-top 20px
+		margin-bottom 100px
+		h2
+			color #f35626
+			font-weight 100
+		.intervalo-a, .intervalo-b, .numero-trapecios
+			margin-top 15px
+			label
+				font-size 25px
+				margin-right 15px
+			button
+				background lightgray
+				border 1px solid gray
+				margin-right 10px
+				width 25px
+			input
+				margin-right 10px
+				text-align center
+		.calcular
+			margin-top 20px
+			button
+				border none
+				padding 10px
+				background white
+				border-radius 5px
+			button:hover
+				border 1px solid #f35626
+				
 
 //@media (min-width: 1200px)
 
 //@media (min-width: 992px), (max-width: 1199px)
 
 //@media (min-width: 768px), (max-width: 991px)
-
+//@media (min-width: 992px)
 
 @media (max-width: 767px)
+	body
+		overflow-y visible
 	.bienvenida
 		top 30%
 		h1
@@ -92,10 +181,14 @@ body
 	.historia-contenido
 		h1
 			font-size 40px
-
+	
+	.opciones-funcion, .intervalos
+		h2
+			font-size 40px
 		
 
 @media (min-width: 768px)
+	
 	.bienvenida
 		top 50%
 		h1
@@ -104,6 +197,10 @@ body
 			font-size 30px
 	.historia-contenido
 		h1
+			font-size 70px
+	
+	.opciones-funcion, .intervalos
+		h2
 			font-size 70px
 
 //@media (min-width: 768px)
