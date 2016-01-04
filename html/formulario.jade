@@ -21,25 +21,25 @@ html
 				label(class="label-dx") dx
 			div(class="row opciones-funcion col-xs-12")
 				h2 Selecciona f(x)
-				div(class="opcion-funcion col-xs-6")
+				div(class="opcion-funcion col-xs-6 trigonometrica")
 					button sen(x)
-				div(class="opcion-funcion col-xs-6")
+				div(class="opcion-funcion col-xs-6 trigonometrica")
 					button cos(x)
-				div(class="opcion-funcion col-xs-6")
+				div(class="opcion-funcion col-xs-6 trigonometrica")
 					button tan(x)
-				div(class="opcion-funcion col-xs-6")
+				div(class="opcion-funcion col-xs-6 trigonometrica")
 					button csc(x)
-				div(class="opcion-funcion col-xs-6")
+				div(class="opcion-funcion col-xs-6 trigonometrica")
 					button sec(x)
-				div(class="opcion-funcion col-xs-6")
+				div(class="opcion-funcion col-xs-6 trigonometrica")
 					button cot(x)
-				div(class="opcion-funcion col-xs-6")
+				div(class="opcion-funcion col-xs-6 normal")
 					button x
-				div(class="opcion-funcion col-xs-6")
+				div(class="opcion-funcion col-xs-6 normal")
 					button x^2
-				div(class="opcion-funcion col-xs-6")
+				div(class="opcion-funcion col-xs-6 normal")
 					button x^3
-				div(class="opcion-funcion col-xs-6")
+				div(class="opcion-funcion col-xs-6 normal")
 					button x^1/2
 			div(class="row intervalos col-xs-12")
 				h2 Intervalos (a,b) y Número de Trapecios (n)
@@ -59,12 +59,14 @@ html
 					input(type="text", value="1", id="input-n", disabled)
 					button(class="resta-n") -
 				div(class="calcular", type="submit")
-					button Calcular
+					button(id ="boton-calcular")
+						a(href="resultado.html") Calcular
 
 
 
 
 script(src='../scripts/jquery.js')
+script(src='../scripts/cookie.js')
 script(src='../scripts/script.js')
 script(src='../scripts/particles.js')
 script(src='../scripts/bootstrap.js')
