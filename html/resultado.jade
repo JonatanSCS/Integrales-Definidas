@@ -15,8 +15,8 @@ html
 		div(class="resultado-div content-fluid")
 			div(class="row imagen-integral")
 				img(src="../img/integral.png", alt="")
-				label(class="label-b") b
 				label(class="label-a") a
+				label(class="label-b") b
 				label(class="label-funcion") f(x)
 				label(class="label-dx") dx
 
@@ -48,12 +48,14 @@ style.
 
 script(src='../scripts/jquery.js')
 script(src='../scripts/cookie.js')
+
 script(src='../scripts/script.js')
+script(src='../scripts/logico/trap.js')
 script(src='../scripts/particles.js')
 script(src='../scripts/bootstrap.js')
 
 script.
-	alert($.cookie("inter-b"));
+
 	$(".label-b").html($.cookie("inter-b"));
 	$(".label-a").html($.cookie("inter-a"));
 	$(".label-funcion").html($.cookie("funcion"));

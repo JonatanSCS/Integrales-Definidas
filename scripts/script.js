@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	var contador_a = 1;
-	var contador_b = 1;
+	var contador_a = 0;
+	var contador_b = 0;
 	var contador_n = 1;
-	var trigonometrica_pi = ["PI/4", "PI/2",  "3PI/4", "PI", "5PI/4", "6PI/4", "7PI/4", "2PI"];
+	var trigonometrica_pi = ["0", "PI/4", "PI/2",  "3PI/4", "PI", "5PI/4", "6PI/4", "7PI/4", "2PI"];
 	var pi_a = 0;
 	var pi_b = 0;
 	var trigonometrica = false;
@@ -118,16 +118,17 @@ $(document).ready(function(){
 			$(".label-n").html(contador_n);
 		}
 	});
-
-	$("#boton-calcular").click(function(){
 		$.removeCookie('funcion');
 		$.removeCookie('inter-a');
 		$.removeCookie('inter-b');
 		$.removeCookie('trapecio');
 
+	$("#boton-calcular").click(function(){
+	
+
 		$.cookie('funcion', $(".label-funcion").html());
-		$.cookie('inter-a', contador_a);
-		$.cookie('inter-b', contador_b);
+		$.cookie('inter-a', $("#input-a").val());
+		$.cookie('inter-b', $("#input-b").val());
 		$.cookie('trapecio', contador_n);
 
 	});
